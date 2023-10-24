@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <title>Google Pay Payments</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="top-icons">
+            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <div class="user-amount">
+            <div class="user">
+                <span class="user-icon">L</span>
+                <span class="payTo">Paying <span class="name"></span></span>
+            </div>
+
+            <div class="money-input">
+                <label for="money" class="rs">₹ <input type="text" name="money" id="money" placeholder="0" /></label>
+                <input type="text" name="note" id="note" placeholder="Add a note" />
+            </div>
+        </div>
+
+        <div class="pay-options">
+            <button class="pay">Pay ₹ <span class="money">0.00</span></button>
+        </div>
+    </section>
+
+    <section class="container1">
+        <div class="paid">
+            <img src="./gpay animation.gif" alt="" />
+            <span class="finalAmount">₹ <span class="finalMoney"></span>123</span>
+            <p class="paidTo">Paid to <span class="person"></span></p>
+        </div>
+
+        <div class="done">
+            <p class="date">s</p>
+            <button class="got-it">Got it</button>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/d191351939.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
