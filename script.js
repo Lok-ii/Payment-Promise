@@ -65,14 +65,14 @@ let paymentReq = () => {
       mainContainer.innerHTML = `<video class="loading" src="./gpay.mp4" autoplay loop muted></video>`;
 
       let success = document.querySelector(".success");
-      let failed = document.querySelector(".failed");
+    //   let failed = document.querySelector(".failed");
 
       setTimeout(() => {
         mainContainer.style.display = "none";
         secondaryContainer.style.display = "flex";
         mainContainer.classList.toggle("cont-two");
-        success.style.display = "none";
-        failed.style.display = "block";
+        success.src = "./animation_lo4lhksn_transparent.gif";
+        success.style.width = "16rem";
         paidTo.innerHTML = `Payment Failed`;
       }, 3000);
     });
@@ -114,3 +114,8 @@ function currentDate() {
 gotIt.addEventListener("click", () => {
   location.reload();
 });
+
+
+window.onload = ()=>{
+    alert("Enter amount less than ₹ 99,999 or else the payment will fail");
+}
