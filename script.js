@@ -17,6 +17,7 @@ let pay = document.querySelector(".pay");
 let date = document.querySelector(".date");
 let finalMoney = document.querySelector(".finalMoney");
 let person = document.querySelector(".person");
+let gotIt = document.querySelector(".got-it");
 
 let randomName = nameArray[Math.floor(Math.random() * 6)];
 
@@ -82,4 +83,6 @@ function currentDate(){
     date.innerText = `${month[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()} ${hours}:${minutes} ${ampm}`;
 }
 
-currentDate();
+gotIt.addEventListener("click", ()=>{
+    location.reload();    
+});
