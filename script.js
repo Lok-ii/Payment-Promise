@@ -35,6 +35,7 @@ money.addEventListener("input", ()=>{
         payMoney.innerText = "0.00";
       }
 
+      finalMoney.innerText = money.value;
       currentDate();
 })
 
