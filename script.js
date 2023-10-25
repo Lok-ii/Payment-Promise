@@ -10,6 +10,7 @@ let nameArray = [
 let mainContainer = document.querySelector(".container");
 let secondaryContainer = document.querySelector(".container1");
 
+let userIcon = document.querySelector(".user-icon");
 let money = document.querySelector("#money");
 let receiver = document.querySelector(".name");
 let payMoney = document.querySelector(".money");
@@ -22,6 +23,7 @@ let paidTo = document.querySelector(".paidTo");
 
 let randomName = nameArray[Math.floor(Math.random() * 6)];
 
+userIcon.innerText = randomName[0];
 receiver.innerText = randomName;
 person.innerText = randomName;
 
